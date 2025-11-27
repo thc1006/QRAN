@@ -1,0 +1,26 @@
+# MCP 環境變數 (包含 API Keys，勿提交)
+.env
+.env.*
+!.env.*.example
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+.mcp.json
+.env.mcp.example
