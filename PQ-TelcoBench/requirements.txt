@@ -1,0 +1,50 @@
+# Core Dependencies
+python-dotenv==1.0.0
+pyyaml==6.0.1
+click==8.1.7
+
+# PQC Libraries
+# Note: liboqs需要系統級安裝,這裡僅包含Python bindings
+# liboqs-python==0.9.0  # 需要先安裝 liboqs C library
+
+# Cryptography
+cryptography==41.0.7
+pyOpenSSL==23.3.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1
+pytest-benchmark==4.0.0
+hypothesis==6.92.1
+
+# Performance Monitoring
+prometheus-client==0.19.0
+psutil==5.9.6
+
+# Data Processing & Visualization
+numpy==1.26.2
+pandas==2.1.4
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Async & Networking
+aiohttp==3.9.1
+asyncio==3.4.3
+requests==2.31.0
+
+# Logging
+structlog==23.2.0
+
+# Development Tools
+black==23.12.1
+flake8==6.1.0
+mypy==1.7.1
+isort==5.13.2
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==2.0.0
+
+# Optional: GPU Support
+# nvidia-ml-py3==7.352.0  # NVIDIA GPU monitoring

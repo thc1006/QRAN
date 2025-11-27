@@ -1,0 +1,23 @@
+# Prometheus configuration for PQ-TelcoBench
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'pq-telebench'
+    environment: 'development'
+
+# Scrape configurations
+scrape_configs:
+  # PQ-TelcoBench metrics
+  - job_name: 'pq-telebench'
+    static_configs:
+      - targets: ['pq-telebench:9090']
+        labels:
+          service: 'pq-telebench'
+          interface: 'e2'
+
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
